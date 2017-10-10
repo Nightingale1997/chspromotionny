@@ -1595,16 +1595,13 @@ screen and (max-height:300px) {
     }
 }
 
-@media (min-width:767px) {
-    
-.container{    width: 100% !important;
-}
+@media (min-width:767px) and (max-width:991px) {
+    .container {
+        width: 100% !important;
+    }
 }
 
 @media (max-width:767px) {
-    
-    
-    
     .section,
     .parallax.section .container {
         padding-top: 30px;
@@ -1636,12 +1633,9 @@ screen and (max-height:300px) {
 }
 
 @media (max-width:767px) {
-    
-    
-    .mobilehide{
+    .mobilehide {
         display: none !important;
     }
-    
     body {
         font-size: 14px;
     }
