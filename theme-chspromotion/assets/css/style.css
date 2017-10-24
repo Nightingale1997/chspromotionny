@@ -101,6 +101,10 @@ pre {
     margin-bottom: 20px;
 }
 
+.hr-black {
+    border-top: 1px solid black;
+}
+
 .lighter {
     font-weight: 100;
 }
@@ -376,6 +380,10 @@ img {
 
 .panel-group .panel {
     border-radius: 0;
+}
+
+.panel-group .panel+.panel {
+    margin-top: 6px;
 }
 
 
