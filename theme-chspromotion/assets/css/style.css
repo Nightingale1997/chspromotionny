@@ -101,6 +101,10 @@ pre {
     margin-bottom: 20px;
 }
 
+hr {
+    width: 50%;
+}
+
 .hr-black {
     border-top: 1px solid black;
 }
@@ -117,6 +121,19 @@ pre {
 
 img {
     max-width: 100%;
+}
+
+.videobackground {
+    position: absolute;
+    z-index: 0;
+}
+
+.darkoverlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5) no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 
@@ -695,7 +712,7 @@ fieldset[disabled] .form-control:focus {
 #hero .herotext {
     padding: 10px 10px;
     margin: 160px 0;
-    background: rgba(0, 0, 0, 0.5) no-repeat 0 0;
+    text-align: center;
 }
 
 #hero h1 {
