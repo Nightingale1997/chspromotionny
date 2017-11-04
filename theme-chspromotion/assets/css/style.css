@@ -17,6 +17,15 @@ a {
     transition: all .2s;
 }
 
+hr{
+width: 25%;    
+}
+
+
+.lead{
+    text-align: justify;
+}
+
 a:hover,
 a:focus {
     color: #3498db;
@@ -109,10 +118,53 @@ pre {
     font-weight: 100;
 }
 
+.contactlist {
+    color: black;
+    list-style: none;
+    text-align: left;
+}
+
 img {
     max-width: 100%;
 }
 
+figcaption{
+    width: 92.5%;
+    height: 82.5%;
+    position: absolute;
+    top: 0px;
+    opacity:0;
+    transition: 0.5s ease;
+    color:white;
+}
+
+figcaption:hover{
+     opacity:1;
+}
+
+
+figcaption div{
+    width: 80%;
+    height: 80%;
+   
+    padding: 10% 10% 10% 10%;
+}
+
+.videobackground{
+    position:absolute;
+
+    width:100%;
+    
+}
+
+
+.darkoverlay{
+    position:absolute;
+    height:110%;
+    width:100%;
+    background:rgba(0, 0, 0, 0.5);
+    
+}
 
 /*	Section	==================================================*/
 
@@ -147,6 +199,52 @@ img {
     color: #FFF;
     font-weight: 300;
     text-decoration: underline;
+}
+
+.contact-box {
+    clear: both;
+    margin-bottom: 15px;
+    display: block;
+    color: #222;
+}
+
+.contact-box:hover {
+    color: #666;
+}
+
+.contact-icon {
+    float: left;
+    font-size: 30px;
+    margin-right: 18px;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(218, 26, 89) !important;
+}
+
+.contact-box i,
+.contact-box .single-row {
+    line-height: 50px !important;
+}
+
+.contact-box .double-row {
+    padding-top: 6px;
+}
+
+.contact-box {
+    font-size: 16px;
+}
+
+.contact-box span {
+    display: block;
+    padding-top: 4px
 }
 
 .btn,
@@ -367,7 +465,7 @@ img {
 }
 
 .panel-heading {
-    padding: 20px 25px;
+    padding: 24px 25px;
 }
 
 .panel-default>.panel-heading a:hover {
@@ -380,6 +478,7 @@ img {
 
 .panel-group .panel {
     border-radius: 0;
+    color:black;
 }
 
 .panel-group .panel+.panel {
@@ -642,8 +741,8 @@ fieldset[disabled] .form-control:focus {
 
 #hero .herotext {
     padding: 10px 10px;
-    margin: 160px 0;
-    background: rgba(0, 0, 0, 0.5) no-repeat 0 0;
+    margin: 80px 0px 105px 0px;
+    text-align: center;
 }
 
 #hero h1 {
@@ -652,6 +751,7 @@ fieldset[disabled] .form-control:focus {
 
 #hero p.lead {
     font-size: 1.4em;
+    text-align: center;
 }
 
 #hero .btn {
@@ -673,6 +773,10 @@ fieldset[disabled] .form-control:focus {
 .maintitle,
 .service-box {
     text-align: center;
+}
+
+.service-box p{
+  /*  text-align: left;*/
 }
 
 .maintitle .lead {
@@ -738,6 +842,7 @@ fieldset[disabled] .form-control:focus {
 
 #gallery .caption {
     float: left;
+    text-align: center;
 }
 
 #gallery .camera {
@@ -1023,6 +1128,11 @@ fieldset[disabled] .form-control:focus {
 
 .footer ul.social-icons li a {
     color: #666;
+}
+
+.icon{
+    width: 32.5%;
+    opacity:0.85;
 }
 
 .contactalert {
