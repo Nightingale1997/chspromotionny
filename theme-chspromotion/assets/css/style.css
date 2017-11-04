@@ -110,6 +110,10 @@ pre {
     margin-bottom: 20px;
 }
 
+hr {
+    width: 50%;
+}
+
 .hr-black {
     border-top: 1px solid black;
 }
@@ -128,6 +132,7 @@ img {
     max-width: 100%;
 }
 
+<<<<<<< HEAD
 figcaption{
     width: 92.5%;
     height: 82.5%;
@@ -165,6 +170,21 @@ figcaption div{
     background:rgba(0, 0, 0, 0.5);
     
 }
+=======
+.videobackground {
+    position: absolute;
+    z-index: 0;
+}
+
+.darkoverlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5) no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+>>>>>>> origin/master
 
 /*	Section	==================================================*/
 
@@ -741,7 +761,11 @@ fieldset[disabled] .form-control:focus {
 
 #hero .herotext {
     padding: 10px 10px;
+<<<<<<< HEAD
     margin: 80px 0px 105px 0px;
+=======
+    margin: 160px 0;
+>>>>>>> origin/master
     text-align: center;
 }
 
