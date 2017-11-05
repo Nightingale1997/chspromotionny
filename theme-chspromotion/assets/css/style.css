@@ -131,7 +131,7 @@ img {
     max-width: 100%;
 }
 
-figcaption {
+a figure figcaption {
     width: 92.5%;
     height: 82.5%;
     position: absolute;
@@ -141,11 +141,11 @@ figcaption {
     color: white;
 }
 
-figcaption:hover {
+a figure figcaption:hover {
     opacity: 1;
 }
 
-figcaption div {
+a figure figcaption div {
     width: 80%;
     height: 80%;
     padding: 10% 10% 10% 10%;
@@ -676,6 +676,19 @@ fieldset[disabled] .form-control:focus {
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
     color: #000;
+}
+
+.navbar-brand img {
+    position: absolute;
+    top: 25%;
+    width: 10%;
+    height: 50%;
+}
+
+@media (min-width:1400px) {
+    .navbar-brand img {
+        width: 7.5%;
+    }
 }
 
 .navbar-inverse {
@@ -1259,11 +1272,7 @@ fieldset[disabled] .form-control:focus {
 .mfp-close,
 .mfp-arrow,
 .mfp-preloader,
-.mfp-counter {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
+.mfp-counter {}
 
 .mfp-loading.mfp-figure {
     display: none;
@@ -1659,6 +1668,26 @@ screen and (max-height:300px) {
 
 
 /*	Common	==================================================*/
+
+.chalmersicon {
+    width: 12.5%;
+    height: 80%;
+    margin-top: -2.5%;
+    margin-left: 2.5%;
+}
+
+.socialicon {
+    width: 3%;
+    opacity: 0.8;
+}
+
+.socialicon:hover {
+    opacity: 1;
+}
+
+.textshadow {
+    text-shadow: 1px 0px 10px black;
+}
 
 .section {}
 
