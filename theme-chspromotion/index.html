@@ -33,7 +33,7 @@
     <!-- Begin Hero Bg -->
     <div id="parallax">
 
-        <video src="assets/img/promotion-film.webm" autoplay muted loop class="videobackground"> </video>
+        <video src="assets/img/promotion-film.webm" autoplay muted loop class="videobackground mobilehide"> </video>
         <div class="darkoverlay"></div>
 
 
@@ -180,11 +180,12 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
                             <img class="icon " src="assets/img/icons/student.png">
-                            <h3>9 500<br> Studenter</h3>
+                            <h3><br class="hideonwide">9 500<br> Studenter</h3>
+
                             <hr class="hr-black">
                             <p>
                                 På Chalmers tekniska högskola studerar ungefär 9 500 helårsstudenter.
-                                <br>
+
                             </p>
 
                         </div>
@@ -219,7 +220,7 @@
     </section>
     <!-- Random
 	================================================== -->
-    <section class="parallax section" style="background-image: url(assets/img/thumbs.jpg);">
+    <section class="parallax section smallbackground" style="background-image: url(assets/img/thumbs.jpg);">
         <div class="wrapsection">
             <div class="parallax-overlay"></div>
             <div class="container">
@@ -276,8 +277,8 @@
                                 </figcaption>
                             </figure>
 
-                            <div class="description">
-                                <span class="caption"><b>Accenture</b> på Teknologgården</b></span>
+                            <div class="description centertext">
+                                <b>Accenture</b><br class="hideonwide"> på Teknologgården</b>
 
                                 <div class="clearfix"></div>
                             </div>
@@ -301,8 +302,8 @@
                             </figure>
 
 
-                            <div class="description">
-                                <span class="caption"><b>Volvo Group</b> tog över campus</b></span>
+                            <div class="description centertext">
+                                <b>Volvo Group</b><br class="hideonwide"> tog över campus</b>
 
                                 <div class="clearfix"></div>
                             </div>
@@ -324,8 +325,8 @@
                             </figure>
 
 
-                            <div class="description">
-                                <span class="caption"><b>Semcons</b> lunchföreläsning</span>
+                            <div class="description centertext">
+                                <b>Semcons</b><br class="hideonwide"> lunchföreläsning
 
                                 <div class="clearfix"></div>
                             </div>
@@ -337,7 +338,7 @@
     </section>
     <!-- Text Carousel
 	================================================== -->
-    <section id="slider" class="parallax section" style="background-image: url(assets/img/backgrounds/20.jpg);">
+    <section id="slider" class="parallax section smallbackground" style="background-image: url(assets/img/backgrounds/20.jpg);">
         <div class="wrapsection">
             <div class="container">
                 <div class="row">
@@ -352,35 +353,35 @@
 
 
                             <div class="carousel-inner textshadow">
-                                <div class=" item active ">
+                                <div class=" item active">
                                     <blockquote>
-                                        <p class="lead ">
-                                            Många goda luncher, bra insikt i arbetsmarknaden och många tillfällen för personlig kontakt med företag. Samt bra kaffe
+                                        <p class="lead">
+                                            Många goda luncher, bra insikt i arbetsmarknaden och många tillfällen för personlig kontakt med företag. Samt bra kaffe.
                                         </p>
                                         <small>Jakob E</small>
                                     </blockquote>
                                 </div>
-                                <div class="item ">
-                                    <blockquote>
-                                        <p class="lead ">
+                                <div class="item">
+                                    <blockquote><br class="hideonwide"><br class="wideonly"><br class="wideonly">
+                                        <p class="lead">
                                             Smidig hantering - från anmälan till genomförande!
-                                        </p>
+                                        </p><br class="wideonly"><br class="wideonly"><br class="hideonwide">
                                         <small>Semcon</small>
                                     </blockquote>
                                 </div>
-                                <div class="item ">
-                                    <blockquote>
-                                        <p class="lead ">
+                                <div class="item">
+                                    <blockquote><br class="wideonly">
+                                        <p class="lead">
                                             Promotion är tveklöst den bästa enskilda erfarenheten jag kommer att ta med mig när jag lämnar Chalmers.
-                                        </p>
+                                        </p><br class="wideonly">
                                         <small>Andreas S.</small>
                                     </blockquote>
                                 </div>
                             </div>
-                            <a class="left carousel-control " href="#Carousel " data-slide="prev ">
+                            <a class="left carousel-control" href="#Carousel" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left "></span>
                             </a>
-                            <a class="right carousel-control " href="#Carousel " data-slide="next ">
+                            <a class="right carousel-control" href="#Carousel" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right "></span>
                             </a>
                         </div>
@@ -410,24 +411,24 @@
                             <fieldset>
                                 <div class="row">
                                     <div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
-                                        <label for="name">Name<span class="required">*</span></label>
+                                        <label for="name">Namn/Företag<span class="required">*</span></label>
                                         <input type="text" name="name" id="name" size="30" value="" required/>
                                     </div>
                                     <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-                                        <label for="email">Email<span class="required">*</span></label>
+                                        <label for="email">E-Post<span class="required">*</span></label>
                                         <input type="text" name="email" id="email" size="30" value="" required/>
                                     </div>
                                     <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-                                        <label for="phone">Phone</label>
+                                        <label for="phone">Telefonnummer</label>
                                         <input type="text" name="phone" id="phone" size="30" value="" />
                                     </div>
                                 </div>
                                 <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
-                                    <label for="message">Message<span class="required">*</span></label>
+                                    <label for="message">Meddelande<span class="required">*</span></label>
                                     <textarea name="message" id="message" required></textarea>
                                 </div>
                                 <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-                                    <input id="submit" type="submit" name="submit" value="Send" />
+                                    <input id="submit" type="submit" name="submit" value="Skicka" />
                                 </div>
                             </fieldset>
                         </form>
@@ -449,6 +450,7 @@
     <!-- Credits 
 =============================================== -->
     <section id="credits " class="text-center ">
+        <br>
         <span class="social wow zoomIn ">
 	<a href="https://www.facebook.com/chspromotion "><img class="socialicon " src="assets/img/icons/facebook.png "></a>
 	
@@ -457,6 +459,7 @@
             <a href="https://www.instagram.com/chspromotion/ "><img class="socialicon " src="assets/img/icons/insta.png "></a>
 	</span>
         <br/> <span class="social wow zoomIn ">© 2014- CHALMERS STUDENTKÅR PROMOTION, All rights reserved <img class="chalmersicon " src="assets/img/icons/chalmers.png "></span>
+        <p><br></p>
 
     </section>
     <!-- Bootstrap core JavaScript
