@@ -1,0 +1,49 @@
+
+
+<div class="clear"></div>
+</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="http://bobby.linexo.se/js/jquery.waypoints.min.js" /></script>
+<script src="<?php bloginfo('stylesheet_directory') ?>/fullPage.js" /></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#index').fullpage({
+            scrollBar:true ,
+            autoScrolling:false,
+            responsive: 9000,
+            resize: false,
+            sectionSelector: 'header'
+        });
+
+        $('.wrapper').css({top: $(window).height() + "px"});
+
+        $('.scroll-to').click(function() {
+            var ScrollTarget = $(this).attr('data-target');
+            console.log('#' + ScrollTarget);
+            scrollTo('#' + ScrollTarget);
+            return false;
+        });
+    });
+
+
+    function scrollTo(hash)
+    {
+        var target = $(hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+            location.hash = hash;
+
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1300, function() {
+            });
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>

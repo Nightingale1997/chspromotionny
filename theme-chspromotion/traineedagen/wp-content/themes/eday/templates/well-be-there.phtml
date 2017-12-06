@@ -1,0 +1,18 @@
+<?php
+$companies = array(
+    'acando-logo.png',
+    'eon-logo-print.png'
+)
+?>
+<section class="company-logos">
+    <div class="content-wrapper row">
+        <h2>We'll be there!</h2>
+        <?php foreach($companies as $key => $company): ?>
+            <?php if( $company == 'bg'): ?>
+                <div class="company-logo" style="background:#1e1e1e"><img src="<?php bloginfo('stylesheet_directory') ?>/images/logos/<?php echo $key ?>" style="max-height:90px" /></div>
+            <?php else: ?>
+                <div class="company-logo"><img src="<?php bloginfo('stylesheet_directory') ?>/images/logos/<?php echo $company ?>" style="max-height:90px" /></div>
+            <?php endif ?>
+        <?php endforeach ?>
+    </div>
+</section>

@@ -1,0 +1,77 @@
+<section>
+
+    <div class="content-wrapper row">
+        <h2 class="text-center" style="  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 40px;">Meet the Team</h2>
+<?php foreach( array(
+   array(
+       'position' => 'Project Manager',
+       'image' => 'ida',
+       'name'  => 'Ida Ekelöf',
+       'phone' => '0768 490 100',
+       'email' => 'ida.ekelof@chspromotion.se'
+   ),array(
+        'position' => 'Project Manager',
+        'image' => 'anna',
+        'name'  => 'Anna Kozakowska',
+        'phone' => '0734 308 990',
+        'email' => 'kozakowsak.anna@gmail.com'
+    ),array(
+        'position' => 'Art Director',
+        'image' => 'kickan',
+        'name'  => 'Kristina Videberger',
+        'phone' => null,
+        'email' => 'kristina.videberger@chspromotion.se'
+    ),array(
+        'position' => 'Project Associate',
+        'image' => 'adam',
+        'name'  => 'Adam Landh',
+        'phone' => null,
+        'email' => 'adam.landh@chspromotion.se'
+    ),array(
+        'position' => 'Project Associate',
+        'image' => 'fredrikt',
+        'name'  => 'Fredrik J Tornéus',
+        'phone' => null,
+        'email' => 'fredrik.torneus@chspromotion.se'
+    ),array(
+        'position' => 'Project Associate',
+        'image' => 'oscarb',
+        'name'  => 'Oscar Brannestam',
+        'phone' => null,
+        'email' => 'oscar.brannestam@chspromotion.se'
+    )
+) as $member ): ?>
+        <div class="col-sm-4">
+            <?php //View::load_view('member.phtml', $member, __DIR__ . '/../../../wp/wp-content/themes/chsp/components/') ?>
+        </div>
+<?php endforeach ?>
+    </div>
+</section>
+
+<div style="height:4px;display:block;width:100%;background:#FAA519"></div>
+
+<section class="map-container">
+    <div class="map">
+        <div class="map-content"></div>
+        <div class="map-overlay"></div>
+    </div>
+    <div class="content-wrapper row">
+        <div class="col-sm-4 col-sm-offset-1">
+            <div class="fa fa-envelope content-icon"></div>
+            <a href="mailto:traineedagen@chspromotion.se">traineedagen@chspromotion.se</a>
+        </div>
+        <div class="col-sm-4">
+            <div class="fa fa-phone content-icon"></div>
+            <a href="tel:+46768490100">+46768 - 49 01 00</a>
+        </div>
+        <div class="col-sm-4 col-sm-offset-1" style="padding-top:40px;">
+            <div class="fa fa-map-marker content-icon"></div>
+            <a href="https://www.google.se/maps/place/H%C3%B6rsalsv%C3%A4gen+7,+Chalmers+University+of+Technology,+412+58+G%C3%B6teborg/@57.6891196,11.9787675,17z/data=!3m1!4b1!4m2!3m1!1s0x464ff30b1914d53d:0x2922a975da374748?hl=en">Teknologgården 2, Gothenburg</a>
+        </div>
+        <div class="map-buffer"></div>
+    </div>
+
+</section>

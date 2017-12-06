@@ -1,0 +1,122 @@
+h1,h2,h3,h4,h5,h6 {
+    text-transform: none;
+}
+header h1 {
+    text-transform: uppercase;
+    width:100%;
+}
+#further-info h2 {
+    text-align: center;
+    margin-bottom:12px;
+}
+#further-info h2 span {
+    display:inline-block;
+    margin: 0 60px;
+}
+#further-info h2 span:nth-of-type(2) {
+    font-size: 43px;
+    line-height: 58px;
+    /*
+    letter-spacing: 2px;
+    word-spacing: 16px;
+    */
+    font-style:italic;
+}
+#further-info h2 span:nth-of-type(1){
+    border-bottom: 6px solid #FAA519;
+    text-transform: uppercase;
+    font-size: 39px;
+    line-height: 48px;
+    font-weight: 800;
+    padding-bottom: 9px;
+}
+#further-info p {
+    font-size: 17px;
+}
+
+
+#hint div {
+    font-size: 4em;
+    color: white;
+    padding: 60px 0;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-style: italic;
+}
+#hint div span {
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+section > .content-wrapper {
+    padding: 0;
+}
+
+#timetable-line {
+    margin-left: -92px;
+    top: -5px;
+    height: 1000px;
+}
+
+
+@media screen and (max-width:768px)
+{
+    .offer > div {
+        min-height: 0 !important;
+    }
+    .timetable .col-sm-7{padding-right:0 !important;}
+}
+
+@media screen and (max-width:592px) {
+    .day-event,
+    .timed-event {
+        width: 90%;
+    }
+
+    .timed-event {
+        margin: 11px auto !important;
+        float: none;
+    }
+
+    .timed-event:after {
+        border: none !important;
+    }
+
+    .time-heading div {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width:492px)
+{
+    .company-logo {
+        margin:16px auto;
+        width:80%;
+        display:block;
+    }
+    .company-logo img {
+        width:100%;
+        height:auto;
+        max-width: none;
+    }
+    #further-info h2 span {
+        margin:0;
+    }
+    #further-info h2 span:nth-of-type(2) {
+        font-size: 29px;
+    }
+    .intro-text p {
+        font-size: 1.8em;
+    }
+
+    .title-container img {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        margin-top: 10px !important;
+        text-align: right;
+        width: 100% !important;
+        margin-bottom: 250px !important;
+    }
+}
