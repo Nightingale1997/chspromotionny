@@ -4,7 +4,8 @@
 <head>
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="">
     <meta name="author" content="">
     <title>CHS Promotion</title>
@@ -125,7 +126,7 @@
 
                     <li class="active">
 
-                        <a href="contact.html">Kontakt</a>
+                        <a href="contact.php">Kontakt</a>
                     </li>
 
                     <li class="navbarseparator mobilehide">
@@ -176,7 +177,7 @@
                             <h3 class="section-title"><strong>Välkommen till oss! </strong></h3>
                             <hr>
                             <p class="lead">
-                                Chalmers Studentkår Promotion skapar en plattform där vi sammanför näringslivet och Chalmerister. Där kan näringslivet hitta sina framtida kollegor och studenter orientera sig i sin framtida karriär.
+                                <b>Chalmers Studentkår Promotion</b> skapar en plattform där vi sammanför näringslivet och Chalmerister. Där kan näringslivet hitta sina framtida kollegor och studenter orientera sig i sin framtida karriär.
 
                             </p>
                         </div>
@@ -210,7 +211,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <img class="icon " src="assets/img/icons/chs.png">
-                            <h3>1 av 3<br> Studentdriva kårbolag</h3>
+                            <h3>1 av 3<br> Studentdrivna kårbolag</h3>
                             <hr class="hr-black">
                             <p>
                                 Vi är en del av Chalmers Studentkår och är ett av kårens tre studentdrivna bolag.
@@ -225,7 +226,7 @@
     </section>
     <!-- Random
 	================================================== -->
-    <section class="parallax section smallbackground" style="background-image: url(assets/img/thumbs.jpg);">
+    <section class="parallax section smallbackground" style="background-position: center center; background-image: url(assets/img/thumbs.jpg);">
         <div class="wrapsection">
             <div class="parallax-overlay"></div>
             <div class="container">
@@ -343,7 +344,7 @@
     </section>
     <!-- Text Carousel
 	================================================== -->
-    <section id="slider" class="parallax section smallbackground" style="background-image: url(assets/img/backgrounds/20.jpg);">
+    <section id="slider" class="parallax section smallbackground" style="background-image: url(assets/img/Backgrounds/20.jpg);">
         <div class="wrapsection">
             <div class="container">
                 <div class="row">
@@ -478,6 +479,33 @@
     <script src="assets/js/jquery.magnific-popup.min.js "></script>
     <script src="assets/js/validate.js "></script>
     <script src="assets/js/common.js "></script>
+    <script>
+        jQuery(window).ready(function() {
+            var windowWidth = jQuery(window).width();
+            /*** DISABLE PARALLAX ON MOBILE ON LOAD ***/
+            if (windowWidth <= 800) {
+                jQuery('.vc_parallax-content-moving').each(function() {
+                    jQuery(this).removeClass('vc_parallax');
+                });
+            }
+
+            /*** DISABLE PARALLAX ON MOBILE ON RESIZE ***/
+            jQuery(window).on('resize', function() {
+                var windowWidth = jQuery(window).width();
+                /*** DISABLE PARALLAX ON MOBILE ON LOAD ***/
+                if (windowWidth <= 800) {
+                    jQuery('.vc_parallax-content-moving').each(function() {
+                        jQuery(this).removeClass('vc_parallax');
+                    });
+                } else {
+                    jQuery('.vc_parallax-content-moving').each(function() {
+                        jQuery(this).addClass('vc_parallax');
+                    });
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>

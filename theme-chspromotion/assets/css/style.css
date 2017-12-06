@@ -134,7 +134,7 @@ img {
     display: inline !important;
 }
 
-a figure figcaption {
+figure figcaption {
     width: 92.5%;
     height: 82.5%;
     position: absolute;
@@ -144,7 +144,7 @@ a figure figcaption {
     color: white;
 }
 
-a figure figcaption:hover {
+figure figcaption:hover {
     opacity: 1;
 }
 
@@ -164,6 +164,7 @@ a figure figcaption div {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 
 
@@ -881,13 +882,15 @@ fieldset[disabled] .form-control:focus {
     transition: all .3s ease-in-out;
 }
 
-#workers a {
+
+
+#workers figure {
     display: block;
     overflow: hidden;
-    margin-bottom: 30px;
+
 }
 
-#workers a img {
+#workers figure img {
     margin-bottom: 0px;
     display: block;
     width: 100%;
@@ -1679,6 +1682,49 @@ screen and (max-height:300px) {
 
 /*	Common	==================================================*/
 
+#popupbackground {
+    cursor: pointer;
+    display: none;
+    z-index: 5;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0.000001px;
+}
+
+/*Fixar position och storlek på popup-fönstrent*/
+
+#loginform {
+    width: 20%;
+    margin-left: 40%;
+    position: fixed;
+    top: 20%;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    border: rgb(0, 153, 216) solid;
+    box-shadow: 0 0 15px rgb(0, 153, 216);
+}
+
+
+  #insertworkerform {
+    width: 35%;
+    margin-left: 32.5%;
+    position: fixed;
+    top: 15%;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    border: rgb(0, 153, 216) solid;
+    box-shadow: 0 0 15px rgb(0, 153, 216);
+}
+
+form {
+    list-style-type: none;
+}
+
+
 .chalmersicon {
     width: 12.5%;
     height: 80%;
@@ -1703,9 +1749,7 @@ screen and (max-height:300px) {
     text-shadow: 1px 0px 10px black;
 }
 
-.section {
-    background-size: 150% !important;
-}
+
 
 .wrapsection {
     padding-top: 140px;
@@ -1788,6 +1832,8 @@ screen and (max-height:300px) {
 }
 
 @media (min-width:991px) and (max-width:1200px) {
+    
+  
 
 
     .workerpic .darkoverlay {
@@ -1863,7 +1909,7 @@ screen and (max-height:300px) {
 @media (min-width:991px) {
 
     .contactbreak {
-        margin-right: 50%;
+        margin-right: 75%;
     }
 }
 
@@ -2046,7 +2092,8 @@ screen and (max-height:300px) {
     }
 
     .smallbackground {
-        background-size: 415% !important;
+        background-size: 500% !important;
+        background-position: center;
     }
 
     .maintitle p.lead {
